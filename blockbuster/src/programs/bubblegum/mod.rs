@@ -9,7 +9,7 @@ use log::warn;
 use mpl_bubblegum::{
     get_instruction_type,
     instructions::{
-        CreateTreeWithRootInstructionArgs, UnverifyCreatorInstructionArgs,
+        FinalizeTreeWithRootInstructionArgs, UnverifyCreatorInstructionArgs,
         UpdateMetadataInstructionArgs, VerifyCreatorInstructionArgs,
     },
     types::{BubblegumEventType, MetadataArgs, UpdateArgs},
@@ -55,7 +55,7 @@ pub enum Payload {
         tree_id: Pubkey,
     },
     CreateTreeWithRoot {
-        args: CreateTreeWithRootInstructionArgs,
+        args: FinalizeTreeWithRootInstructionArgs,
         tree_id: Pubkey,
     },
 }
@@ -314,7 +314,7 @@ fn build_create_tree_with_root_payload(
     keys: &[Pubkey],
     ix_data: &[u8],
 ) -> Result<Payload, BlockbusterError> {
-    let args = CreateTreeWithRootInstructionArgs::try_from_slice(ix_data)?;
+    let args = FinalizeTreeWithRootInstructionArgs::try_from_slice(ix_data)?;
 
     let tree_id = *keys
         .get(1)
