@@ -45,7 +45,7 @@ impl FinalizeTreeWithRootInstructionArgsWithStaker {
         collection_mint: Option<Pubkey>,
     ) -> Self {
         Self {
-            rightmost_root: args.rightmost_root,
+            rightmost_root: args.root,
             rightmost_leaf: args.rightmost_leaf,
             rightmost_index: args.rightmost_index,
             metadata_url: args.metadata_url,
@@ -380,7 +380,7 @@ fn build_create_tree_with_root_and_collection_payload(
         .get(10)
         .ok_or(BlockbusterError::InstructionParsingError)?;
     let args = FinalizeTreeWithRootInstructionArgsWithStaker::build_finalize_tree_with_root_instruction_args_with_staker(FinalizeTreeWithRootInstructionArgs {
-        rightmost_root: args.rightmost_root,
+        root: args.root,
         rightmost_leaf: args.rightmost_leaf,
         rightmost_index: args.rightmost_index,
         metadata_url: args.metadata_url,
