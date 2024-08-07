@@ -6,12 +6,12 @@ use crate::{
 };
 use borsh::{BorshDeserialize, BorshSerialize};
 use log::warn;
-use mpl_bubblegum::instructions::FinalizeTreeWithRootAndCollectionInstructionArgs;
 use mpl_bubblegum::{
     get_instruction_type,
     instructions::{
-        FinalizeTreeWithRootInstructionArgs, UnverifyCreatorInstructionArgs,
-        UpdateMetadataInstructionArgs, VerifyCreatorInstructionArgs,
+        FinalizeTreeWithRootAndCollectionInstructionArgs, FinalizeTreeWithRootInstructionArgs,
+        UnverifyCreatorInstructionArgs, UpdateMetadataInstructionArgs,
+        VerifyCreatorInstructionArgs,
     },
     types::{BubblegumEventType, MetadataArgs, UpdateArgs},
 };
