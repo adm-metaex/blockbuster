@@ -2219,7 +2219,7 @@ dependencies = [
 [[package]]
 name = "mpl-bubblegum"
 version = "1.4.0"
-source = "git+https://github.com/adm-metaex/mpl-bubblegum?branch=feature/cleanup#82029450d87f528c4338b791e893ea1d45dd75be"
+source = "git+https://github.com/adm-metaex/mpl-bubblegum?branch=feature/cleanup#ec3dd4a31ad5fc20bd3deb01f9a71750f0601ad4"
 dependencies = [
  "borsh 0.10.3",
  "kaigan",
@@ -2233,9 +2233,9 @@ dependencies = [
 
 [[package]]
 name = "mpl-core"
-version = "0.7.2"
+version = "0.8.0-beta.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e1d4f516cd9daae872182a50850ab6d5588667e71152d49b0729a32830036b83"
+checksum = "1178d8a405352e2a2478abf5b62e2a4d6a91ed6f0470307ab6732614662dbf85"
 dependencies = [
  "base64 0.22.1",
  "borsh 0.10.3",
@@ -2610,8 +2610,8 @@ checksum = "b4596b6d070b27117e987119b4dac604f3c58cfb0b191112e24771b2faeac1a6"
 
 [[package]]
 name = "plerkle_serialization"
-version = "1.8.0"
-source = "git+https://github.com/n00m4d/digital-asset-validator-plugin.git#6920f6d3f30d6bc9c9c7eefeb5c7c1bcc87fa0c8"
+version = "1.9.0"
+source = "git+https://github.com/n00m4d/digital-asset-validator-plugin.git#61de71c8f64f2b743c0a339b9e9ccac5aabe66c4"
 dependencies = [
  "bs58 0.4.0",
  "chrono",
