@@ -2218,8 +2218,8 @@ dependencies = [
 
 [[package]]
 name = "mpl-bubblegum"
-version = "1.4.0"
-source = "git+https://github.com/adm-metaex/mpl-bubblegum?rev=afebaf7#afebaf7e72a659bae028c72149c63f8009557736"
+version = "1.5.0"
+source = "git+https://github.com/adm-metaex/mpl-bubblegum?rev=d27bc9b#d27bc9b6a2465d8817726b81453935074594e118"
 dependencies = [
  "borsh 0.10.3",
  "kaigan",
